@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/x10dp"
+        android:background="@color/grey_home_search">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search"
+            android:textColor="@color/white"
+            android:text="@string/what_are_you"
+            android:drawablePadding="@dimen/x8dp"
+            app:customFont="Montserrat-Regular_0.otf"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        app:tabIndicatorHeight="@dimen/x0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingTop="-1dp"
+        app:tabPaddingBottom="-1dp"
+        android:background="@color/grey_lightest"
+        android:layout_gravity="center_horizontal"
+        app:tabMode="scrollable"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/grey_lighter"
+        />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"/>
+
+
+</LinearLayout>

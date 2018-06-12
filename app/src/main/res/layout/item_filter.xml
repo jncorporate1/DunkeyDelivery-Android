@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/x15dp"
+    android:layout_marginRight="@dimen/x15dp">
+
+
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomCheckBox
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:padding="@dimen/x10dp"
+        android:text="France"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_small"
+        android:background="@drawable/radio_selector_filter"
+        android:textColor="@color/tab_text_selector"
+        />
+
+
+</LinearLayout>

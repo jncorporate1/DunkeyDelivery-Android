@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/x2dp">
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        hedgehog:starCount="5"
+        hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+        hedgehog:starFill="@drawable/ic_star_small_selected"
+        hedgehog:starHalf="@drawable/ic_star_small_selected"
+        hedgehog:starImageHeight="@dimen/x20dp"
+        hedgehog:starImageWidth="@dimen/x20dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x20dp"
+        android:layout_marginLeft="@dimen/x8dp"
+        android:layout_weight="1"
+        android:progress="50"
+        android:progressDrawable="@drawable/green_progress_drawable" />
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x5dp"
+        android:text="50"
+        android:textColor="@color/grey_dark"
+        android:textSize="@dimen/text_size_moderate" />
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_numberPickerDialoge"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/x15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <NumberPicker
+        android:id="@+id/np_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x150dp">
+    </NumberPicker>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Hrs"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_moderate" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/np_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x150dp">
+        </NumberPicker>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Mins"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/np_seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x150dp">
+        </NumberPicker>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Secs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate" />
+
+    </LinearLayout>
+
+</LinearLayout>

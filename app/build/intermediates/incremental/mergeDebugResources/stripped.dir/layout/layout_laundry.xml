@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/x5dp"
+    android:layout_marginTop="@dimen/x8dp"
+    android:background="@drawable/rect_white_border"
+    android:padding="@dimen/x6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:src="@drawable/hemming" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/x5dp"
+            android:singleLine="true"
+            android:text="@string/hemming"
+            android:textSize="@dimen/text_size_small"
+            app:customFont="Montserrat-Regular_0.otf" />
+
+        <include layout="@layout/layout_quantity_picker_laundry" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\layout_recycleview.xml",
+        "source": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\src\\main\\res\\layout\\layout_recycleview.xml"
+    },
+    {
+        "merged": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main4.xml",
+        "source": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\src\\main\\res\\layout\\fragment_main4.xml"
+    },
+    {
+        "merged": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_view_pager.xml",
+        "source": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\src\\main\\res\\layout\\activity_view_pager.xml"
+    },
+    {
+        "merged": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main3.xml",
+        "source": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\src\\main\\res\\layout\\fragment_main3.xml"
+    }
+]

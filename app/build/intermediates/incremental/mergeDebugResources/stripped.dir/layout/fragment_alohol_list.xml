@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ScrollView
+            android:visibility="visible"
+            android:id="@+id/sv_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_see_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical"/>
+            </RelativeLayout>
+
+        </ScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ll_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x5dp"
+        android:text="@string/no_records"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:customFont="Montserrat-Light_0.otf"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_size_larger" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey_lightest"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/x12dp"
+
+            android:paddingRight="@dimen/x12dp"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_cc_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="@dimen/x10dp"
+                android:hint="@string/credit_card_number"
+                android:inputType="number"
+                android:maxLength="19"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingTop="@dimen/x20dp"
+                android:singleLine="true"
+                android:textColor="@color/grey3"
+                android:textColorHint="@color/grey"
+                android:nextFocusDown="@+id/et_cvv"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/x10dp"
+                    android:layout_weight="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mm_yy"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/x20dp"
+                        android:paddingBottom="@dimen/x8dp"
+                        android:drawablePadding="@dimen/x10dp"
+                        android:textColorHint="@color/grey"
+                        android:editable="false"
+                        android:background="@null"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_moderate"
+                        android:maxLength="5"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/x10dp"
+                    android:layout_weight="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                        android:id="@+id/et_cvv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/cvv"
+                        android:maxLines="1"
+                        android:paddingTop="@dimen/x20dp"
+                        android:paddingBottom="@dimen/x8dp"
+                        android:drawablePadding="@dimen/x10dp"
+                        android:inputType="number"
+                        android:textColorHint="@color/grey"
+                        android:background="@null"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_moderate"
+                        android:maxLength="4"
+                        android:nextFocusDown="@+id/et_zipcode"
+                        android:singleLine="true" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/zip_code"
+                android:maxLines="1"
+                android:paddingTop="@dimen/x20dp"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:inputType="number"
+                android:textColorHint="@color/grey"
+                android:background="@null"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_moderate"
+                android:nextFocusDown="@+id/et_label"
+                android:maxLength="6"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawablePadding="@dimen/x10dp"
+                android:hint="@string/label"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingTop="@dimen/x20dp"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/grey3"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey"/>
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/cb_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x4dp"
+            android:layout_marginRight="@dimen/x4dp"
+            android:text="@string/set_as_default"
+            android:layout_marginTop="@dimen/x25dp"/>
+
+        <Button
+            android:id="@+id/btn_add_new_creditcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x30dp"
+            android:text="@string/continue_str"
+            android:padding="@dimen/x12dp"
+            android:layout_marginLeft="@dimen/x14dp"
+            android:layout_marginRight="@dimen/x14dp"
+            android:background="@drawable/green_rounded_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+</ScrollView>

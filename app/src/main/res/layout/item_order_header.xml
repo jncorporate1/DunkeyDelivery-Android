@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x4dp"
+        android:layout_marginRight="@dimen/x4dp"
+        android:padding="10dp">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="@dimen/x0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"
+            android:text="Order ID"
+            app:customFont="Montserrat-Light_0.otf"
+            android:textSize="@dimen/text_size_medium" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_arrow_up"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/uparrow"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/iv_arrow_dn"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/downarrow"
+                android:visibility="visible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_light" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/drawable/rounded_edittext.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:bottomLeftRadius="120dp"
+                    android:topLeftRadius="120dp"/>
+                <solid android:color="@color/colorPrimary" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

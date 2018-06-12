@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    app:customFont="Montserrat-Regular_0.otf"
+                    android:textSize="@dimen/text_size_moderate"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:text="@string/sort_by"/>
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:customFont="Montserrat-Regular_0.otf"
+                    android:textSize="@dimen/text_size_moderate"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:drawablePadding="@dimen/x5dp"
+                    android:drawableRight="@drawable/ic_dropdown"
+                    android:text="@string/distance"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <app.com.dunkeydelivery.utils.customviews.ToggleButtonGroupTableLayout
+                    android:id="@+id/tg_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/x4dp">
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_distance"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/distance"/>
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_rating"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/rating"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/x4dp">
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_time"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/est_delivery_time"/>
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_price"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/price"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/x4dp">
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_delivery"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/min_delivery"/>
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_atoz"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/grey3"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/a_to_z"/>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/x4dp">
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                            android:id="@+id/rb_relevence"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey3"
+                            android:textSize="@dimen/text_size_small"
+                            android:text="@string/relevence"/>
+                    </TableRow>
+
+                </app.com.dunkeydelivery.utils.customviews.ToggleButtonGroupTableLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:textSize="@dimen/text_size_moderate"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="@string/rating"/>
+
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                hedgehog:starCount="5"
+                android:padding="@dimen/x10dp"
+                android:gravity="center"
+                hedgehog:starImagePadding="@dimen/x12dp"
+                hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+                hedgehog:starFill="@drawable/ic_star_small_selected"
+                hedgehog:starHalf="@drawable/ic_star_small_selected"
+                hedgehog:starImageHeight="@dimen/x35dp"
+                hedgehog:starImageWidth="@dimen/x35dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:textSize="@dimen/text_size_moderate"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="@string/est_delivery_time"/>
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_rd_time1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_time_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:visibility="visible"
+                        android:text="@string/thirty_min"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_rd_time2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_time_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/fourty_45_min"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rd_time3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_time_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/sixty_min"/>
+                </LinearLayout>
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:textSize="@dimen/text_size_moderate"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="@string/price_range"/>
+
+
+            <RadioGroup
+                android:id="@+id/rg_price"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomCheckBox
+                        android:id="@+id/rb_price_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@color/tab_text_selector"
+                        android:text="$"
+                        android:background="@drawable/radio_selector_filter"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomCheckBox
+                        android:id="@+id/rb_price_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="$$"
+                        android:textColor="@color/tab_text_selector"
+                        android:background="@drawable/radio_selector_filter"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomCheckBox
+                        android:id="@+id/rb_price_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@color/tab_text_selector"
+                        android:text="$$$"
+                        android:background="@drawable/radio_selector_filter"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomCheckBox
+                        android:id="@+id/rb_price_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:textColor="@color/tab_text_selector"
+                        android:text="$$$$"
+                        android:background="@drawable/radio_selector_filter"/>
+                </LinearLayout>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:textSize="@dimen/text_size_moderate"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:text="@string/min_delivery"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/ll_d1"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.93"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_delivery_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/less_then_five"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_d2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_delivery_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/less_then_ten"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_d3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_delivery_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/less_then_fifteen"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_d4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb_delivery_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"/>
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_small"
+                        android:textColor="@color/grey3"
+                        android:text="@string/less_then_twenty"/>
+                </LinearLayout>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomSwitch
+            android:id="@+id/sw_special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/special_offer_only"
+            android:textSize="@dimen/text_size_moderate"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            app:customFont="Montserrat-Regular_0.otf"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomSwitch
+            android:id="@+id/sw_free_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/free_delivery_only"
+            android:textSize="@dimen/text_size_moderate"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            app:customFont="Montserrat-Regular_0.otf"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"/>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomSwitch
+            android:id="@+id/sw_new_restaurants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_restaurants_only"
+            android:textSize="@dimen/text_size_moderate"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            app:customFont="Montserrat-Regular_0.otf"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"
+            android:layout_marginBottom="@dimen/x8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

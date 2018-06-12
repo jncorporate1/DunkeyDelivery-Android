@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:background="@drawable/bg"
+            android:padding="@dimen/x20dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_title_points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/x20dp"
+                android:layout_marginRight="@dimen/x20dp"
+                android:background="@drawable/ribbin"
+                android:gravity="center"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingLeft="@dimen/x8dp"
+                android:paddingRight="@dimen/x8dp"
+                android:text="@string/earn_points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small"
+                app:customFont="Montserrat-Regular_0.otf" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_showRewardPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/x15dp">
+
+            <!--<app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="@dimen/x15dp"
+                android:background="@drawable/rect_grey_border"
+                android:text="0"
+                android:textColor="@color/grey3"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_medium"
+                />-->
+        </LinearLayout>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x15dp"
+            android:text="@string/points_earned"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_moderate"
+            app:customFont="Montserrat-Regular_0.otf" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x10dp"
+            android:layout_marginTop="@dimen/x15dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x5dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="$500"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:gravity="right"
+                android:text="iPod"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Roku"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10dp"
+            android:layout_marginRight="@dimen/x10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_rounded_grey"
+                        android:button="@null"
+                        android:padding="@dimen/x10dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar_points"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="false"
+                            android:padding="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_drawable" />
+                    </FrameLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_grey_border"
+                        android:button="@null"
+                        android:padding="@dimen/x10dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar_points1"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="false"
+                            android:padding="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_drawable1" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect_grey_border"
+                        android:button="@null"
+                        android:padding="@dimen/x10dp" />
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar_points2"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:indeterminate="false"
+                            android:padding="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingStart="0dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/progress_drawable2" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/right_rounded_grey"
+                        android:button="@null"
+                        android:padding="@dimen/x10dp" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_points4"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminate="false"
+                        android:padding="0dp"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="0dp"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/progress_drawable3" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x15dp"
+            android:layout_marginRight="@dimen/x10dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x5dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.6"
+                android:gravity="right"
+                android:text="10000"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text="1,00,000"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/grey3" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="5,00,000"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="  Order  "
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_smaller"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tv_order"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x10dp"
+                android:background="@drawable/circle_white_grey_border"
+                android:padding="@dimen/x40dp"
+                android:src="@drawable/trofee_golden" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/tv_order"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_green_filled"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_points2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/tv_order"
+                android:background="@drawable/circle_green_filled"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/x8dp"
+                android:layout_toLeftOf="@+id/tv_point3"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="@string/get_rewards"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_smaller"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x8dp"
+                android:layout_toRightOf="@+id/tv_points2"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="@string/earn_points_small"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_smaller"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_point3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/tv_order"
+                android:background="@drawable/circle_green_filled"
+                android:gravity="center"
+                android:padding="@dimen/x2dp"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:id="@+id/ll_mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/x15dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/redeem_your_points"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_showReward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

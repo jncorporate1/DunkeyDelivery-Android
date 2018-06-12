@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lightest"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/x10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_update"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_target_black"
+            android:drawablePadding="@dimen/x8dp"
+            android:padding="@dimen/x8dp"
+            android:text="@string/add_new_address"
+            android:textColor="@color/grey_dark" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/rv_swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x4dp"
+                    android:layout_marginTop="@dimen/x4dp">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x8dp"
+                        android:text="296 Hemlsadale Dr, Hemderson"
+                        android:textColor="@color/grey3"
+                        android:visibility="gone" />
+
+                </RadioGroup>
+
+            </ScrollView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/x2dp"
+        android:background="@drawable/green_rounded_btn"
+        android:padding="@dimen/x12dp"
+        android:text="@string/update_address"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="bold" />
+
+</RelativeLayout>

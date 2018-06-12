@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10dp"
+        android:background="@drawable/bg"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginTop="@dimen/x8dp"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:maxWidth="130dp"
+                    android:layout_height="wrap_content"
+                    app:customFont="Montserrat-Regular_0.otf"
+                    android:textSize="@dimen/text_size_moderate"
+                    android:textColor="@color/white"
+                    android:singleLine="true"
+                    android:text="Wings World"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/x8dp"
+                    android:gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+                        hedgehog:starFill="@drawable/ic_star_small_white"
+                        hedgehog:starHalf="@drawable/ic_star_small_white"
+                        hedgehog:starImageHeight="@dimen/x15dp"
+                        hedgehog:starImageWidth="@dimen/x15dp" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_rate"
+                        android:text="4"
+                        android:textSize="@dimen/text_size_smaller"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/x4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smaller"
+                    android:singleLine="true"
+                    android:text="Delivery Fee   $2"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x8dp"
+                    android:layout_marginRight="@dimen/x8dp"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:background="@color/grey"/>
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_subtitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smaller"
+                    android:singleLine="true"
+                    android:text="Min Order   $50"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:singleLine="true"
+                    android:drawablePadding="@dimen/x4dp"
+                    android:layout_marginRight="@dimen/x15dp"
+                    android:drawableLeft="@drawable/ic_pin_white"
+                    android:text="0.1 m"/>
+
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smallest"
+                    android:singleLine="true"
+                    android:drawablePadding="@dimen/x4dp"
+                    android:drawableLeft="@drawable/ic_time_white"
+                    android:text="45 to 60 min"/>
+
+
+            </LinearLayout>
+
+            <org.apmem.tools.layouts.FlowLayout
+                android:id="@+id/flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x4dp"
+                >
+
+                <include layout="@layout/item_tag"></include>
+
+                <include layout="@layout/item_tag"></include>
+
+                <include layout="@layout/item_tag"></include>
+
+
+
+            </org.apmem.tools.layouts.FlowLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_lightest"
+        android:padding="@dimen/x5dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/x10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_search_grey"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_lighter"/>
+
+        <ImageButton
+            android:id="@+id/ib_review"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/x10dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_msg"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_lighter"/>
+
+
+        <ImageButton
+            android:id="@+id/ib_info"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/x10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_info_unselected"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ll_tv_category_line"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            android:text="@string/categories"/>
+
+        <View
+            android:layout_width="@dimen/x50dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/x10dp"
+            android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/x8dp"
+            android:id="@+id/parentLayout"
+            android:background="@color/white">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/rv_swipe_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_height="match_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/tv_swipe_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_noresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_moderate"
+                    android:background="@color/white"
+                    android:textColor="@color/grey_light"
+                    android:text="@string/no_category"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

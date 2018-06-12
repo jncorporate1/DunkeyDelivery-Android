@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_bg_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x20dp"
+        android:layout_marginRight="@dimen/x20dp"
+        android:background="@drawable/rect_white"
+        android:layout_centerHorizontal="true">
+
+        <RadioGroup
+            android:id="@+id/rg_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/x4dp"
+                android:gravity="left|center"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="@dimen/x10dp"
+                android:layout_marginLeft="@dimen/x10dp"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginBottom="@dimen/x12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                android:text="@string/comment_on_site"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_lighter"/>
+
+            <RadioButton
+                android:id="@+id/rb_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/x4dp"
+                android:gravity="left|center"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="@dimen/x10dp"
+                android:layout_marginLeft="@dimen/x10dp"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginBottom="@dimen/x12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                android:text="@string/question_about_site"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_lighter"/>
+
+            <RadioButton
+                android:id="@+id/rb_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/x4dp"
+                android:gravity="left|center"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="@dimen/x10dp"
+                android:layout_marginLeft="@dimen/x10dp"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginBottom="@dimen/x12dp"
+                android:textSize="@dimen/text_size_moderate"
+                android:textColor="@color/black"
+                android:text="@string/report_techincal_issue"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_lighter"/>
+
+            <RadioButton
+                android:id="@+id/rb_inquiry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/x4dp"
+                android:gravity="left|center"
+                android:layoutDirection="rtl"
+                android:layout_marginRight="@dimen/x10dp"
+                android:layout_marginLeft="@dimen/x10dp"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginBottom="@dimen/x12dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                android:text="@string/bussiness_inquiry"/>
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/x12dp">
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x8dp"
+                        android:layout_marginRight="@dimen/x8dp"
+                        android:padding="@dimen/x2dp"
+                        android:singleLine="true"
+                        android:text="Zinger Burger"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_moderate"
+                        app:customFont="Montserrat-Regular_0.otf" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x8dp"
+                        android:layout_marginRight="@dimen/x8dp"
+                        android:padding="@dimen/x2dp"
+                        android:singleLine="true"
+                        android:text="Price $10"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="arial.ttf" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x5dp"
+                    android:background="@drawable/circle_green_filled"
+                    android:gravity="center"
+                    android:padding="@dimen/x2dp"
+                    android:visibility="gone">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x8dp"
+                        android:padding="@dimen/x2dp"
+                        android:singleLine="true"
+                        android:text="Quantity: "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size_small"
+                        android:visibility="gone"
+                        app:customFont="arial.ttf" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_quantity"
+                        android:layout_width="@dimen/x25dp"
+                        android:layout_height="@dimen/x25dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:padding="@dimen/x2dp"
+                        android:singleLine="true"
+                        android:text="10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="arial.ttf" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+    </LinearLayout>
+
+</RelativeLayout>

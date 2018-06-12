@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/x12dp"
+    android:layout_height="wrap_content">
+
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:padding="@dimen/x10dp"
+        android:text="American"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginRight="@dimen/x15dp"
+        android:textSize="@dimen/text_size_moderate"
+        android:background="@drawable/radio_selector_filter"
+        android:textColor="@color/tab_text_selector"
+        />
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:padding="@dimen/x10dp"
+        android:gravity="center"
+        android:text="American"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/x15dp"
+        android:textSize="@dimen/text_size_moderate"
+        android:background="@drawable/radio_selector_filter"
+        android:textColor="@color/tab_text_selector"
+        />
+
+
+</LinearLayout>

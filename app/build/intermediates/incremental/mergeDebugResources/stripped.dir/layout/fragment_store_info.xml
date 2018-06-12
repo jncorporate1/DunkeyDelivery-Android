@@ -1,0 +1,541 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10dp">
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="130dp"
+                            android:singleLine="true"
+                            android:text="Wings World"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_moderate"
+                            app:customFont="Montserrat-Regular_0.otf" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x8dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+
+
+                            <com.hedgehog.ratingbar.RatingBar
+                                android:id="@+id/ratingbar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                hedgehog:starCount="5"
+                                hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+                                hedgehog:starFill="@drawable/ic_star_small_selected"
+                                hedgehog:starHalf="@drawable/ic_star_small_selected"
+                                hedgehog:starImageHeight="@dimen/x15dp"
+                                hedgehog:starImageWidth="@dimen/x15dp" />
+
+                            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                                android:id="@+id/tv_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/x4dp"
+                                android:text="4"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/text_size_smaller"
+
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <org.apmem.tools.layouts.FlowLayout
+                        android:id="@+id/flow_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4dp"
+                        android:orientation="horizontal">
+
+
+                    </org.apmem.tools.layouts.FlowLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x10dp"
+                android:paddingLeft="@dimen/x10dp"
+                android:paddingRight="@dimen/x10dp"
+                android:paddingTop="@dimen/x8dp">
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x5dp"
+                    android:layout_marginRight="@dimen/x5dp"
+                    android:singleLine="true"
+                    android:text="@string/location"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x5dp"
+                    android:layout_marginRight="@dimen/x5dp"
+                    android:layout_marginTop="@dimen/x8dp"
+                    android:text="358 w 44th st 10036 212 581 4869"
+                    android:textColor="@color/grey3"
+                    android:textSize="16sp"
+                    app:customFont="Montserrat-Regular.otf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_store_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x8dp"
+                    android:layout_marginRight="@dimen/x5dp"
+                    android:singleLine="true"
+                    android:text="(212) 581 4869"
+                    android:textColor="@color/grey3"
+                    android:textSize="16sp"
+                    app:customFont="Montserrat-Regular.otf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/x10dp"
+                    android:paddingLeft="@dimen/x10dp"
+                    android:paddingRight="@dimen/x10dp"
+                    android:singleLine="true"
+                    android:text="@string/delivery_hours"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/monday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_monday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cream_light"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/tuesday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_tuesday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_wednessday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/wednessday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_wednessday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cream_light"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/thursday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_thursday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/friday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_friday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cream_light"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/saturday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-SemiBold.otf" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_saturday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".6"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/sunday"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-SemiBold.otf" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grey_lighter" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_sunday_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingLeft="@dimen/x10dp"
+                        android:paddingRight="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="11:30 AM to 11:30 PM"
+                        android:textColor="@color/grey3"
+                        android:textSize="@dimen/text_size_small"
+                        app:customFont="Montserrat-Regular.otf" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="@dimen/x10dp"
+                    android:background="@color/grey_lighter" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

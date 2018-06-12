@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x10dp"
+    android:paddingRight="@dimen/x10dp"
+    android:paddingBottom="@dimen/x15dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Wine"
+            app:customFont="Montserrat-Regular_0.otf"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/see_all"
+            android:paddingTop="@dimen/x15dp"
+            android:paddingBottom="@dimen/x15dp"
+            android:textColor="@color/colorPrimaryDark"
+            app:customFont="Montserrat-Regular_0.otf"
+            android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:nestedScrollingEnabled="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_noresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:text="@string/no_records"
+        android:paddingTop="@dimen/x15dp"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/x15dp"
+        android:textColor="@color/grey4"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:textSize="@dimen/text_size_small"/>
+
+</LinearLayout>

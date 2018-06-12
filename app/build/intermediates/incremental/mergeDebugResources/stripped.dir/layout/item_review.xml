@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    xmlns:swipe="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x12dp"
+        android:paddingTop="@dimen/x12dp">
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="@dimen/x60dp"
+            android:layout_height="@dimen/x60dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x8dp"
+                android:layout_marginRight="@dimen/x8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="130dp"
+                    android:singleLine="true"
+                    android:text="John Smith"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x8dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+
+                    <com.hedgehog.ratingbar.RatingBar
+                        android:id="@+id/ratingbar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        hedgehog:starImagePadding="@dimen/x1dp"
+                        hedgehog:starCount="5"
+                        hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+                        hedgehog:starFill="@drawable/ic_star_small_selected"
+                        hedgehog:starHalf="@drawable/ic_star_small_selected"
+                        hedgehog:starImageHeight="@dimen/x10dp"
+                        hedgehog:starImageWidth="@dimen/x10dp" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14/21/2017"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_smallest"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_review_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x2dp"
+                android:layout_marginLeft="@dimen/x8dp"
+                android:layout_marginRight="@dimen/x8dp"
+                android:layout_marginTop="@dimen/x2dp"
+                android:padding="@dimen/x2dp"
+                android:singleLine="true"
+                android:text="3 reviews"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_smaller" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x8dp"
+                android:layout_marginRight="@dimen/x8dp"
+                android:padding="@dimen/x2dp"
+                android:text="@string/dummy_text2"
+                android:textColor="@color/grey_dark"
+                android:textSize="@dimen/text_size_smaller" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_lighter" />
+
+
+</LinearLayout>

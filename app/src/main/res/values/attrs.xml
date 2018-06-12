@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomRadioButton">
+        <attr name="customFont2" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomSwitch">
+        <attr name="customFont3" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCheckBoxButton">
+        <attr name="customFont4" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTagFlowLayout">
+        <attr name="custom_auto_select_effect" format="boolean"></attr>
+        <attr name="custom_max_select" format="integer"></attr>
+        <attr name="custom_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

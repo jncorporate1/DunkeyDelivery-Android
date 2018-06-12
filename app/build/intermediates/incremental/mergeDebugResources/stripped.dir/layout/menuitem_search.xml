@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:background="@drawable/rect_white_border">
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:padding="@dimen/x4dp"
+        android:textSize="@dimen/text_size_small"
+        android:background="@color/transparent"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:hint="Search"/>
+
+    <ImageButton
+        android:id="@+id/ib_target"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/target"
+        android:background="@color/transparent"
+        android:padding="@dimen/x10dp"/>
+
+</LinearLayout>

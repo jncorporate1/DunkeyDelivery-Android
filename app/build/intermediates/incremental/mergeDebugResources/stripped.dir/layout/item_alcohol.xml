@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:orientation="vertical"
+    android:layout_width="150dp"
+    android:gravity="center"
+    android:padding="@dimen/x10dp"
+    android:layout_margin="@dimen/x5dp"
+    android:background="@drawable/rect_white_light_border"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/x70dp"
+        android:layout_height="@dimen/x70dp"
+        android:src="@drawable/bottle"
+        android:scaleType="fitCenter"/>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="Fratelli Moscato"
+        android:layout_marginTop="@dimen/x4dp"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_moderate"/>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="Price $7.25"
+        android:gravity="left"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_small"/>
+
+</LinearLayout>

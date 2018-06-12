@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/x12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_store_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Bario's"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:drawableLeft="@drawable/ic_time_white"
+                    android:drawablePadding="@dimen/x4dp"
+                    android:singleLine="true"
+                    android:text="Delivery in 45 to 60 min"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_smaller"
+
+                    />
+
+
+            </LinearLayout>
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/x2dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="@dimen/x10dp"-->
+            <!--android:layout_marginRight="@dimen/x10dp"-->
+            <!--android:src="@color/white" />-->
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_min_order_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:drawableLeft="@drawable/ic_min_order"
+                android:drawableTint="@color/white"
+                android:drawablePadding="@dimen/x4dp"
+                android:singleLine="true"
+                android:text="Minimum Order Price $0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_smaller"
+
+                />
+        </LinearLayout>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x4dp"
+            android:background="@color/green_dark"
+            android:drawablePadding="@dimen/x4dp"
+            android:padding="@dimen/x5dp"
+            android:text="$9.25"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</RelativeLayout>

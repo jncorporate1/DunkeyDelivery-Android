@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/x8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ride_description"
+            android:textColor="@color/grey" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x15dp"
+            android:background="@color/white"
+            android:hint="@string/full_name"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_bussiness_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:background="@color/white"
+            android:hint="@string/bussiness_name"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_bussiness_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:background="@color/white"
+            android:hint="@string/bussiness_type"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:background="@color/white"
+            android:hint="@string/prompt_email_address"
+            android:inputType="textEmailAddress"
+            android:maxLength="80"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:background="@color/white"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:background="@color/white"
+            android:hint="@string/zip_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingBottom="@dimen/x10dp"
+            android:paddingTop="@dimen/x8dp"
+            android:singleLine="true"
+            android:textColor="@color/grey3"
+            android:textColorHint="@color/grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey2" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x30dp"
+            android:background="@drawable/green_rounded_btn"
+            android:padding="@dimen/x12dp"
+            android:text="@string/submit_form"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

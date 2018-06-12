@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/x4dp"
+    android:paddingRight="@dimen/x4dp"
+    android:layout_width="wrap_content">
+
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/x4dp"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:paddingRight="@dimen/x20dp"
+        android:paddingLeft="@dimen/x20dp"
+        android:paddingBottom="@dimen/x4dp"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_smallest"
+        android:background="@drawable/rounded_btn_orange"
+        android:text="Italian"/>
+
+</LinearLayout>

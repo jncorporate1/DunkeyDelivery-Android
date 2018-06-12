@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6ebe44</color>
+    <color name="colorPrimaryDark">#6ebe44</color>
+    <color name="colorAccent">#6ebe44</color>
+
+    <color name="statusBarColor">#26000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="green_light">#E8EDE5</color>
+    <color name="cream_light">#f5faf2</color>
+    <color name="grey_dark">#959595</color>
+    <color name="grey">#9b9b9b</color>
+    <color name="grey_home_search">#868c8e</color>
+    <color name="grey2">#868c8e</color>
+    <color name="grey3">#474747</color>
+    <color name="grey4">#656565</color>
+    <color name="green_dark">#459719</color>
+    <color name="grey_light">#bdbdbd</color>
+    <color name="grey_lighter">#d7d7d7</color>
+    <color name="grey_lighter2">#eaeaea</color>
+    <color name="gift_indicator_inactive">#5b96d8</color>
+    <color name="grey_lightest">#f1f1f1</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="fb_color">#3b5998</color>
+    <color name="google_color">#dd5044</color>
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+
+
+    <color name="food_selected_color">#e76a30</color>
+    <color name="alcohol_selected_color">#2193ce</color>
+    <color name="grocery_selected_color">#9b69ad</color>
+    <color name="laundry_selected_color">#d7455c</color>
+    <color name="pharmacy_selected_color">#85ba48</color>
+    <color name="retail_selected_color">#dca600</color>
+    <color name="ride_selected_color">#1da5b1</color>
+
+</resources>

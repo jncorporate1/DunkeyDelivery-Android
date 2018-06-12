@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/x4dp"
+    android:background="@color/grey_lightest"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/food"/>
+    
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/grey3"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:text="Food"/>
+
+</LinearLayout>

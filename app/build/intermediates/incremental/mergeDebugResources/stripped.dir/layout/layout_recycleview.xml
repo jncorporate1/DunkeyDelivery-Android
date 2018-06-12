@@ -1,0 +1,107 @@
+                                                                   
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/parentLayout"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="@color/white" android:tag="layout/layout_recycleview_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageButton
+                android:id="@+id/ib_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_arrow_back_white"
+                android:background="@color/transparent"
+                android:padding="@dimen/x12dp"/>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:padding="@dimen/x4dp"
+                android:textSize="@dimen/text_size_medium"
+                android:imeOptions="actionSearch"
+                android:textColorHint="@color/cream_light"
+                android:layout_marginRight="@dimen/x4dp"
+                android:backgroundTint="@color/white"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:hint="Search"/>
+
+            <ImageButton
+                android:id="@+id/ib_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/cross"
+                android:background="@color/transparent"
+                android:padding="@dimen/x15dp"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/rv_swipe_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_height="match_parent" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:id="@+id/tv_new_streams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="New Records"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent"/>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/tv_swipe_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_noresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_medium"
+                    android:background="@color/white"
+                    android:textColor="@color/grey_light"
+                    android:text="@string/no_results"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+         

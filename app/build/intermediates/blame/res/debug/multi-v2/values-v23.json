@@ -1,0 +1,66 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\raheelmushtaq\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\cda69427ddbedf380e520046dc8c4f2c\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,19,32,33,34,35,36",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1277,2079,2206,2311,2426,2533",
+                        "endLines": "2,3,4,5,18,31,32,33,34,35,36",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "185,320,395,482,1272,2074,2201,2306,2421,2528,2641"
+                    },
+                    "to": {
+                        "startLines": "42,43,44,45,46,59,72,73,74,75,76",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2652,2787,2922,2997,3084,3874,4676,4803,4908,5023,5130",
+                        "endLines": "42,43,44,45,58,71,72,73,74,75,76",
+                        "endColumns": "134,134,74,86,12,12,126,104,114,106,112",
+                        "endOffsets": "2782,2917,2992,3079,3869,4671,4798,4903,5018,5125,5238"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\raheelmushtaq\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-27.0.1.aar\\4bf58a15aae02d233334eb7b39c7a53a\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "77",
+                        "startColumns": "4",
+                        "startOffsets": "5243",
+                        "endLines": "79",
+                        "endColumns": "12",
+                        "endOffsets": "5388"
+                    }
+                },
+                {
+                    "source": "E:\\Android\\git_workspace\\DunkeyDelivery_Android\\app\\src\\main\\res\\values-v23\\styles.xml",
+                    "from": {
+                        "startLines": "29,16,3,68,64,75,57,66,83,21,25,43,51,47,38,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1461,838,104,3021,2843,3484,2537,2937,3906,1105,1283,2018,2357,2175,1855,1705",
+                        "endLines": "32,19,13,73,64,81,62,66,85,23,27,45,53,49,40,36",
+                        "endColumns": "12,12,12,12,90,12,12,80,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1697,1097,828,3476,2929,3898,2835,3013,4064,1275,1453,2167,2525,2349,2008,1847"
+                    },
+                    "to": {
+                        "startLines": "2,6,10,21,27,28,35,41,80,83,86,89,92,95,98,101",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,338,599,1318,1773,1863,2276,2572,5393,5554,5727,5900,6052,6223,6400,6556",
+                        "endLines": "5,9,20,26,27,34,40,41,82,85,88,91,94,97,100,103",
+                        "endColumns": "12,12,12,12,89,12,12,79,12,12,12,12,12,12,12,12",
+                        "endOffsets": "333,594,1313,1768,1858,2271,2567,2647,5549,5722,5895,6047,6218,6395,6551,6696"
+                    }
+                }
+            ]
+        }
+    ]
+}

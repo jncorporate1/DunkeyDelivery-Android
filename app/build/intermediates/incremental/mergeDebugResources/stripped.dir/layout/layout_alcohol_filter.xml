@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/x15dp"
+    android:layout_marginBottom="@dimen/x15dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:textSize="@dimen/text_size_moderate"
+        android:paddingLeft="@dimen/x8dp"
+        android:paddingRight="@dimen/x8dp"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:text="Country"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="true"
+        android:paddingLeft="@dimen/x8dp"
+        android:paddingRight="@dimen/x8dp"
+        android:layout_marginTop="@dimen/x15dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:textSize="@dimen/text_size_moderate"
+        android:gravity="center"
+        android:padding="@dimen/x8dp"
+        android:layout_marginTop="@dimen/x15dp"
+        android:drawablePadding="@dimen/x4dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:drawableRight="@drawable/ic_dropdown_green"
+        android:singleLine="true"
+        android:text="@string/view_more"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/x15dp"
+        android:background="@color/grey_lighter"/>
+
+</LinearLayout>

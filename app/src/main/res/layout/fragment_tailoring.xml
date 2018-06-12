@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/bg4"/>
+
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/x8dp"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:textSize="@dimen/text_size_moderate"
+            app:customFont="Montserrat-Regular_0.otf"
+            android:text="@string/tailoring"/>
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey4"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/dummy_text"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/x18dp"
+            android:background="@color/grey_lighter"/>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/x8dp"
+            android:paddingLeft="@dimen/x10dp"
+            android:paddingRight="@dimen/x10dp"
+            android:paddingTop="@dimen/x15dp"
+            android:textSize="@dimen/text_size_moderate"
+            app:customFont="Montserrat-Regular_0.otf"
+            android:text="@string/please_make_choice"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/x10dp"
+            android:background="@color/grey_lighter"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:padding="@dimen/x8dp"
+            android:clipToPadding="true"
+            android:nestedScrollingEnabled="false"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="150dp"
+            android:layout_marginTop="@dimen/x20dp"
+            android:background="@drawable/rect_grey_border"
+            android:maxLines="15"
+            android:textColorHint="@color/grey"
+            android:layout_margin="@dimen/x10dp"
+            android:gravity="left|top"
+            android:maxLength="200"
+            android:padding="@dimen/x8dp"
+            android:textSize="@dimen/text_size_moderate"
+            android:hint="@string/add_special_instructions"
+            />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20dp"
+            android:text="@string/add_to_bag"
+            android:padding="@dimen/x12dp"
+            android:layout_marginRight="@dimen/x10dp"
+            android:layout_marginLeft="@dimen/x10dp"
+            android:layout_marginBottom="@dimen/x20dp"
+            android:background="@drawable/green_rounded_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rv_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x4dp"
+        android:layout_marginTop="@dimen/x4dp">
+
+        <!--<worker8.com.github.radiogroupplus.RadioGroupPlus-->
+        <!--android:id="@+id/rg_cuisine"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_cuisines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        <!--<include-->
+        <!--layout="@layout/layout_cousine_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<include-->
+        <!--layout="@layout/layout_cousine_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<include-->
+        <!--layout="@layout/layout_cousine_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <!--<include-->
+        <!--layout="@layout/layout_cousine_item"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+        <!--</worker8.com.github.radiogroupplus.RadioGroupPlus>-->
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/tv_swipe_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_nostore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x120dp"
+                android:layout_height="@dimen/x100dp"
+                android:layout_marginBottom="@dimen/x5dp"
+                android:src="@drawable/sadface" />
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_Oops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x5dp"
+                android:text="@string/oops"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_larger"
+                app:customFont="Montserrat-Light_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x5dp"
+                android:text="@string/no_cuisines_available"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_add_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/x7dp"
+                android:text="@string/refresh_cuisines"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:padding="@dimen/x10dp"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:textSize="@dimen/text_size_moderate"
+        android:text="Beer store"/>
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:padding="@dimen/x10dp"
+        android:textSize="@dimen/text_size_small"
+        android:text="@string/change"/>
+
+</LinearLayout>

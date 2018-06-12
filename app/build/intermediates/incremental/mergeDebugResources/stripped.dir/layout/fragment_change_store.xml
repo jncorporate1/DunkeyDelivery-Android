@@ -1,0 +1,97 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:background="@color/grey_lightest"
+    android:orientation="vertical">
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:text="@string/changing_store"
+        android:padding="@dimen/x8dp"
+        android:textColor="@color/grey3"
+        android:textSize="@dimen/text_size_smaller"
+        />
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_header"
+        android:background="@color/grey_lighter"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_lightest"
+        android:layout_below="@+id/border"
+        android:layout_above="@+id/btn_select">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/rv_swipe_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:background="@color/grey_lightest"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:layout_height="match_parent" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <TextView
+            android:id="@+id/tv_new_streams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="New Records"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/tv_swipe_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_noresult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_medium"
+                android:background="@color/white"
+                android:textColor="@color/grey_light"
+                android:text="@string/no_results"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20dp"
+        android:layout_marginBottom="@dimen/x20dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/select"
+        android:padding="@dimen/x12dp"
+        android:layout_marginLeft="@dimen/x10dp"
+        android:layout_marginRight="@dimen/x10dp"
+        android:background="@drawable/green_rounded_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_medium" />
+
+</RelativeLayout>

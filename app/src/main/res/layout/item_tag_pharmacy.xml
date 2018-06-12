@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/x4dp"
+    android:paddingRight="@dimen/x4dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_btn_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:maxWidth="90dp"
+        android:paddingTop="@dimen/x4dp"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:layout_marginRight="@dimen/x8dp"
+        android:layout_marginLeft="@dimen/x20dp"
+        android:gravity="right"
+        android:paddingBottom="@dimen/x4dp"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_smallest"
+        android:text="Brufen"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x2dp"
+        android:src="@drawable/minus"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_drawer_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/sidebarbg">
+
+    <ImageView
+        android:id="@+id/imv_user"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_user"
+        android:background="@color/white"
+        android:padding="@dimen/x2dp"
+        android:scaleType="centerCrop"
+         />
+
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:text="Mohammad Uddin"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="@dimen/x8dp"
+        app:customFont="Montserrat-Regular_0.otf"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="developer@yahoo.com" />
+
+
+
+</LinearLayout>

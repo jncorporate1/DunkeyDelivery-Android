@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/x15dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x15dp"
+        android:padding="@dimen/x10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/rect_grey_border">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_points_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_size_small"
+            app:customFont="Montserrat-Regular_0.otf"
+            android:text="0 Points Reward"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/x15dp"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id="@+id/ll_dollarValue"
+            android:padding="@dimen/x12dp"
+            android:layout_marginTop="@dimen/x15dp"
+            android:background="@drawable/circle_white_grey_border">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:paddingTop="@dimen/x10dp"
+                android:layout_marginRight="@dimen/x2dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_smaller"
+                android:text="$"/>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/tv_dollarValue"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_large"
+                app:customFont="Montserrat-Regular_0.otf"
+                android:text="0"/>
+
+        </LinearLayout>
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:padding="@dimen/x0dp"
+                android:layout_width="65dp"
+                android:src="@drawable/alcohol"
+                android:id="@+id/iv_rewardPrizeImage"
+                android:layout_height="65dp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_radeem1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x15dp"
+            android:text="@string/radeem"
+            android:padding="@dimen/x5dp"
+            android:layout_marginLeft="@dimen/x4dp"
+            android:layout_marginRight="@dimen/x4dp"
+            android:background="@drawable/grey_rounded_btn"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:tag="0"
+            android:enabled="true"
+            android:textSize="@dimen/text_size_smaller" />
+
+    </LinearLayout>
+
+</LinearLayout>

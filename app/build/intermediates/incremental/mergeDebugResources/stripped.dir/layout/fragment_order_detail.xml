@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/nsvOrderDetail"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x15dp"
+            android:gravity="center"
+            android:text="@string/thank_for_your_order"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large"
+            app:customFont="Montserrat-Regular_0.otf" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x5dp"
+            android:gravity="center"
+            android:text="@string/here_are_the_details"
+            android:textColor="@color/grey_dark"
+            android:textSize="@dimen/text_size_moderate" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/x15dp"
+            android:background="@color/grey_light" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/x10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_marginLeft="@dimen/x12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Order Date : "
+                android:textColor="@color/black"
+                android:textSize="@dimen/x12dp" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="11 Apr ,2018"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x12dp"
+                app:customFont="Roboto-Light_D.ttf" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/llLinear"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvTipLabel"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp"
+                    />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvTip"
+                    android:text="12"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp"
+                    app:customFont="Roboto-Light_D.ttf" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x12dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Delivery Time :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_order_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x4dp"
+                    android:gravity="center"
+                    android:text=" 07:30 pm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/taxLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tax"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/x12dp"
+                    app:customFont="Roboto-Light_D.ttf" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/x15dp"
+            android:background="@color/grey_light" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewOrderProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/x12dp">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subtotal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x12dp"
+                android:paddingLeft="@dimen/x12dp"
+                android:paddingRight="@dimen/x12dp">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tax"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvTax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>-->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x12dp"
+                android:paddingLeft="@dimen/x12dp"
+                android:paddingRight="@dimen/x12dp">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tvTipLabel"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x12dp"
+                android:paddingLeft="@dimen/x12dp"
+                android:paddingRight="@dimen/x12dp">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delivery_fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x12dp"
+                android:paddingLeft="@dimen/x12dp"
+                android:paddingRight="@dimen/x12dp">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_light" />
+
+        </LinearLayout>
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x12dp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x12dp"
+            android:text="Delivery Address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate"
+            app:customFont="Montserrat-Regular_0.otf" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x12dp"
+            android:layout_marginTop="@dimen/x5dp"
+            android:gravity="left"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x12dp"
+            android:text="Shiekh Khalifa bin salman, 199 Downtown, Dubai"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small"
+            app:customFont="Roboto-Light_D.ttf" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

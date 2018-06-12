@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bottle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Krunch Burger"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x8dp"
+                android:text="@string/dummy_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_detail_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10dp"
+                android:singleLine="true"
+                android:text="Other liquour"
+                android:textColor="@color/grey4"
+                android:textSize="@dimen/text_size_small" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tvDetail2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_detail_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/storeNameLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:id="@+id/ll_storeNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_storenameheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Store Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_storename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x15dp"
+                android:singleLine="true"
+                android:text="Other liquour"
+                android:textColor="@color/grey4"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/productsInOfferLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:id="@+id/ll_productsInOfferLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_productsinoffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Products In Offer"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <LinearLayout
+                android:id="@+id/ll_addmoreproducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--<include layout="@layout/layout_products_in_deals" />-->
+
+                <!--<include layout="@layout/layout_products_in_deals" />-->
+
+                <!--<include layout="@layout/layout_products_in_deals" />-->
+
+                <!--<include layout="@layout/layout_products_in_deals" />-->
+
+            </LinearLayout>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_see"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="See More"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x12dp"
+                android:visibility="gone" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_less"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="See Less"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/x12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:id="@+id/llPriceLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="$10"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/llProductSizesLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llProductSizes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x8dp"
+            android:paddingTop="@dimen/x8dp"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_label1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x8dp"
+                    android:singleLine="true"
+                    android:text="@string/choice_of_size"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_label2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_label1"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:paddingLeft="@dimen/x8dp"
+                    android:singleLine="true"
+                    android:text="@string/required_choose"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_small" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rgp_bottlesize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_label2"
+                    android:layout_marginLeft="@dimen/x2dp"
+                    android:layout_marginRight="@dimen/x8dp"></android.support.v7.widget.RecyclerView>
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvSeeMoreProductSizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgp_bottlesize"
+                    android:layout_marginTop="@dimen/x15dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="See More"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/x12dp"
+                    android:visibility="visible" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tvSeeLessProductSizes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rgp_bottlesize"
+                    android:layout_marginTop="@dimen/x15dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text="See Less"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/x12dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/quantity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <include layout="@layout/layout_quantity_picker"></include>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="$0.0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x20dp"
+            android:background="@color/grey_lightest"
+            android:gravity="left|top"
+            android:hint="@string/add_special_instructions"
+            android:maxLength="200"
+            android:maxLines="15"
+            android:minHeight="150dp"
+            android:padding="@dimen/x8dp"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text_size_moderate" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20dp"
+            android:layout_marginLeft="@dimen/x8dp"
+            android:layout_marginRight="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x20dp"
+            android:background="@drawable/green_rounded_btn"
+            android:padding="@dimen/x12dp"
+            android:text="@string/add_to_bag"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

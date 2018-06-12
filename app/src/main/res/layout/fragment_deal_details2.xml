@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Krunch Burger"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_medium"
+                android:visibility="gone"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x8dp"
+                android:text="@string/dummy_text3"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_detail_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10dp"
+                android:singleLine="false"
+                android:text="@string/dummy_text2"
+                android:textColor="@color/grey4"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_storename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Store Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x8dp"
+        android:layout_marginTop="@dimen/x8dp"
+        android:orientation="vertical"
+        android:padding="@dimen/x8dp">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_productsinoffer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="Products In Offer"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate"
+            app:customFont="Montserrat-Regular_0.otf" />
+
+        <include layout="@layout/layout_products_in_deals"/>
+        <include layout="@layout/layout_products_in_deals"/>
+        <include layout="@layout/layout_products_in_deals"/>
+        <include layout="@layout/layout_products_in_deals"/>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="$10"
+                android:textColor="@color/grey_light"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x8dp"
+            android:paddingTop="@dimen/x8dp"
+            android:visibility="gone">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x8dp"
+                android:singleLine="true"
+                android:text="@string/choice_of_size"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:paddingLeft="@dimen/x8dp"
+                android:singleLine="true"
+                android:text="@string/required_choose"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_small" />
+
+            <worker8.com.github.radiogroupplus.RadioGroupPlus
+                android:id="@+id/rgp_bottlesize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x2dp"
+                android:layout_marginRight="@dimen/x8dp"
+                android:layout_marginTop="@dimen/x4dp"
+                android:orientation="vertical">
+
+                <!--<include-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/layout_price"/>-->
+
+                <!--<include-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/layout_price"/>-->
+                <!--<include-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--layout="@layout/layout_price"/>-->
+
+
+            </worker8.com.github.radiogroupplus.RadioGroupPlus>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/quantity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <include layout="@layout/layout_quantity_picker"></include>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x8dp"
+            android:orientation="horizontal"
+            android:padding="@dimen/x8dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="$20"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_lighter" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+            android:id="@+id/et_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x20dp"
+            android:background="@color/grey_lightest"
+            android:gravity="left|top"
+            android:hint="@string/add_special_instructions"
+            android:maxLength="200"
+            android:maxLines="15"
+            android:minHeight="150dp"
+            android:padding="@dimen/x8dp"
+            android:textColorHint="@color/grey"
+            android:textSize="@dimen/text_size_moderate" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20dp"
+            android:layout_marginLeft="@dimen/x8dp"
+            android:layout_marginRight="@dimen/x8dp"
+            android:layout_marginTop="@dimen/x20dp"
+            android:background="@drawable/green_rounded_btn"
+            android:padding="@dimen/x12dp"
+            android:text="@string/add_to_bag"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>

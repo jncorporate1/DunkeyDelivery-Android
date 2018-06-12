@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_medium"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="@dimen/x10dp"
+        android:layout_marginTop="@dimen/x10dp"
+        android:layout_marginBottom="@dimen/x10dp"
+        android:padding="@dimen/x10dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:background="@color/white"
+        android:text="@string/call"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_lighter"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10dp"
+        android:layout_marginBottom="@dimen/x10dp"
+        android:padding="@dimen/x10dp"
+        android:textColor="@color/black"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="@dimen/x10dp"
+        android:textSize="@dimen/text_size_medium"
+        android:drawableLeft="@drawable/ic_email"
+        android:background="@color/white"
+        android:text="@string/prompt_email"/>
+
+</LinearLayout>

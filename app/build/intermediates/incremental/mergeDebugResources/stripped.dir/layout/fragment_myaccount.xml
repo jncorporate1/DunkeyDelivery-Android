@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_lightest"
+    android:clickable="true">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_username"
+                android:drawablePadding="@dimen/x10dp"
+                android:hint="@string/first_name"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingTop="@dimen/x25dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_username"
+                android:drawablePadding="@dimen/x10dp"
+                android:hint="@string/last_name"
+                android:inputType="textCapWords"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingTop="@dimen/x20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="@dimen/x10dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingTop="@dimen/x20dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/x20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_lighter" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_change_paswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12dp"
+                android:layout_marginRight="@dimen/x12dp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_change"
+                android:drawablePadding="@dimen/x10dp"
+                android:drawableRight="@drawable/rightarrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/x20dp"
+                android:paddingRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x20dp"
+                android:singleLine="true"
+                android:text="@string/change_your_password"
+                android:textColor="@color/grey3"
+                android:textSize="@dimen/text_size_moderate" />
+
+            <View
+                android:id="@+id/view_separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_lighter" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x16dp"
+            android:layout_marginRight="@dimen/x16dp"
+            android:layout_marginTop="@dimen/x30dp"
+            android:background="@drawable/green_rounded_btn"
+            android:padding="@dimen/x12dp"
+            android:text="@string/continue_str"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>

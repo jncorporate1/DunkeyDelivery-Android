@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/x10dp">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/rv_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:text="@string/dunkey_delivery_reviews"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_medium"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+
+                <com.hedgehog.ratingbar.RatingBar
+                    android:id="@+id/ratingbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:padding="@dimen/x8dp"
+                    hedgehog:starCount="5"
+                    hedgehog:starEmpty="@drawable/ic_star_small_unselected"
+                    hedgehog:starFill="@drawable/ic_star_small_selected"
+                    hedgehog:starHalf="@drawable/ic_star_small_selected"
+                    hedgehog:starImageHeight="@dimen/x35dp"
+                    hedgehog:starImagePadding="@dimen/x12dp"
+                    hedgehog:starImageWidth="@dimen/x35dp" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/based_on"
+                    android:textColor="@color/grey_dark"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+                <LinearLayout
+                    android:id="@+id/ll_ratings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x4dp"
+                    android:paddingTop="@dimen/x4dp">
+
+                    <include
+                        layout="@layout/layout_rating"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/layout_rating"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/layout_rating"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/layout_rating"
+                        android:visibility="gone" />
+
+                    <include
+                        layout="@layout/layout_rating"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_lighter" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_noresult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/no_results"
+                    android:textColor="@color/grey_light"
+                    android:textSize="@dimen/text_size_medium"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

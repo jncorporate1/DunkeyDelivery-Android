@@ -1,0 +1,250 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainbg"
+    tools:context="architecture.app.com.apparchitecture.activities.auth.LoginActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x12dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imv_user"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginTop="@dimen/x10dp"
+                android:layout_marginBottom="@dimen/x10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_user"/>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name"
+                android:maxLines="1"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x12dp"
+                android:textColorHint="@color/grey"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:background="@null"
+                android:maxLength="80"
+                android:textSize="@dimen/text_size_moderate"
+                android:inputType="textCapWords"
+                android:drawableLeft="@drawable/ic_username"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark"/>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x10dp"
+                android:textColorHint="@color/grey"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:background="@null"
+                android:maxLength="80"
+                android:textSize="@dimen/text_size_moderate"
+                android:drawableLeft="@drawable/ic_username"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark"/>
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x10dp"
+                android:textColorHint="@color/grey"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:background="@null"
+                android:maxLength="80"
+                android:textSize="@dimen/text_size_moderate"
+                android:drawableLeft="@drawable/ic_email"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark"/>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x10dp"
+                android:textColorHint="@color/grey"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:background="@null"
+                android:maxLength="50"
+                android:textSize="@dimen/text_size_moderate"
+                android:drawableLeft="@drawable/ic_pwd"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark"/>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginLeft="@dimen/x4dp"
+                android:layout_marginRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x10dp"
+                android:textColorHint="@color/grey"
+                android:paddingBottom="@dimen/x8dp"
+                android:drawablePadding="@dimen/x10dp"
+                android:background="@null"
+                android:maxLength="50"
+                android:textSize="@dimen/text_size_moderate"
+                android:drawableLeft="@drawable/ic_pwd"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark"/>
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x30dp"
+                android:text="@string/sign_up"
+                android:padding="@dimen/x12dp"
+                android:background="@drawable/green_rounded_btn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/grey"/>
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/OR"
+                    android:padding="@dimen/x8dp"
+                    android:background="@drawable/circle_white"
+                    android:textColor="@color/grey_dark"
+                    android:layout_centerInParent="true"/>
+
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fb_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20dp"
+                android:gravity="center"
+                android:padding="@dimen/x12dp"
+                android:background="@drawable/fb_rounded_btn">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_with_fb"
+                    android:drawablePadding="@dimen/x8dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/facebook_icon"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_gmail_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x12dp"
+                android:layout_marginBottom="@dimen/x12dp"
+                android:gravity="center"
+                android:padding="@dimen/x12dp"
+                android:background="@drawable/google_rounded_btn">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/continue_with_google"
+                    android:drawablePadding="@dimen/x8dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/google_icon"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

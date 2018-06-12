@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "635411899430",
+    "firebase_url": "https://dunkeydelivery-207006.firebaseio.com",
+    "project_id": "dunkeydelivery-207006",
+    "storage_bucket": "dunkeydelivery-207006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635411899430:android:9659ffd3934ff49f",
+        "android_client_info": {
+          "package_name": "app.com.dunkeydelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635411899430-d887kvb3jqrkhofqap41tmdb4op1fcdv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "635411899430-374k9vojoav4tam5f22ri6tpi0k54m6l.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "635411899430-d499qcdlmk0n4r6fqim4cmihhjaeiusc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.com.dunkeydelivery",
+            "certificate_hash": "4c06fb0f954cbecddad69a01ebf4a460c90cd695"
+          }
+        },
+        {
+          "client_id": "635411899430-374k9vojoav4tam5f22ri6tpi0k54m6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMKr0FcajsKidtrEXUopuXjM7_QeII23Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635411899430-d887kvb3jqrkhofqap41tmdb4op1fcdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

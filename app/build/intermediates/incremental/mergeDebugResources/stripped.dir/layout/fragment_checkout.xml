@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/ll_main_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:orientation="vertical"
+            android:padding="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/customTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10dp"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subtotal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_subtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_tax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tax"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf"
+
+                    />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_tax_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tip 12%"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf"
+
+                    />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_tip_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delivery Fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf"
+
+                    />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x4dp"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/total"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small"
+
+                    />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$80"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_small" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:id="@+id/ll_delivery_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/x12dp"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x4dp"
+            android:paddingTop="@dimen/x12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_delivery_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x4dp"
+                    android:textColor="@color/black"
+                    android:text="N/A"
+                    android:textSize="@dimen/text_size_small"
+                    app:customFont="Roboto-Light_D.ttf" />
+                <!-- android:text="Muhammad Uddin 7 W 34th st, 1001" -->
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_add_delivery_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x6dp"
+                    android:drawableLeft="@drawable/ic_add"
+                    android:drawablePadding="@dimen/x4dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/x10dp"
+                    android:paddingTop="@dimen/x10dp"
+                    android:singleLine="true"
+                    android:text="@string/add_new_address"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x8dp"
+                android:background="@drawable/rightarrow" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:gravity="center"
+            android:id="@+id/ll_delivery_information"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/x0dp"
+            android:paddingLeft="@dimen/x12dp"
+            android:paddingRight="@dimen/x12dp"
+            android:paddingTop="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_card_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x4dp"
+                android:layout_marginTop="@dimen/x4dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x8dp"
+                android:paddingLeft="@dimen/x0dp"
+                android:paddingRight="@dimen/x4dp"
+                android:paddingTop="@dimen/x0dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/tv_creditcardnumber"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_moderate"
+                        android:text="N/A"
+                        app:customFont="Roboto-Light_D.ttf" />
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_creditcardexpiry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x4dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="N/A"
+                        app:customFont="Roboto-Light_D.ttf" />
+                    <!-- android:text="Muhammad Uddin 7 W 34th st, 1001" -->
+
+                    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                        android:id="@+id/tv_add_creditcard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x6dp"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:drawablePadding="@dimen/x4dp"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingBottom="@dimen/x10dp"
+                        android:paddingTop="@dimen/x10dp"
+                        android:singleLine="true"
+                        android:text="@string/add_new_credit_card"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/text_size_smaller"
+                        app:customFont="Montserrat-Regular_0.otf" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginRight="@dimen/x8dp"
+                    android:background="@drawable/rightarrow" />
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x16dp"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                    android:id="@+id/rb_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_radio_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/x12dp"
+                    android:text="@string/credit_card"
+                    android:textColor="@color/tab_text_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont2="Montserrat-Regular_0.otf" />
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                    android:id="@+id/rb_paypal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/x12dp"
+                    android:text="@string/paypal"
+                    android:textColor="@color/tab_text_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont2="Montserrat-Regular_0.otf" />
+
+
+            </RadioGroup>
+
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:id="@+id/tv_add_credit_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x6dp"
+                android:drawableLeft="@drawable/ic_add"
+                android:drawablePadding="@dimen/x4dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/x10dp"
+                android:paddingTop="@dimen/x10dp"
+                android:singleLine="true"
+                android:text="@string/add_new_credit_card"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_smaller"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:padding="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/set_frequency"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <RadioGroup
+                android:id="@+id/rg_frequency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                    android:id="@+id/rb_one_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_radio_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="@dimen/x12dp"
+                    android:text="@string/one_time"
+                    android:textColor="@color/tab_text_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont2="Montserrat-Regular_0.otf" />
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                    android:id="@+id/rb_weekly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/middle_radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/x12dp"
+                    android:text="@string/weekly"
+                    android:textColor="@color/tab_text_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont2="Montserrat-Regular_0.otf" />
+
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+                    android:id="@+id/rb_monthly"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/right_radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:padding="@dimen/x12dp"
+                    android:text="@string/monthly"
+                    android:textColor="@color/tab_text_selector"
+                    android:textSize="@dimen/text_size_smaller"
+                    app:customFont2="Montserrat-Regular_0.otf" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/x12dp">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_notes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomEditText
+                android:id="@+id/et_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x12dp"
+                android:background="@color/grey_lightest"
+                android:gravity="left|top"
+                android:hint="@string/add_special_instructions"
+                android:maxLength="200"
+                android:maxLines="15"
+                android:minHeight="130dp"
+                android:padding="@dimen/x8dp"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey_light" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x4dp"
+            android:layout_marginTop="@dimen/x4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x12dp"
+                android:text="@string/item_summary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_moderate"
+                app:customFont="Montserrat-Regular_0.otf" />
+
+            <LinearLayout
+                android:id="@+id/ll_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/item_product_store"
+                    android:visibility="gone" />
+
+                <include
+                    layout="@layout/item_product"
+                    android:visibility="gone"></include>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20dp"
+                android:background="@drawable/rect_white_border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/x18dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/trofee" />
+
+                <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+                    android:id="@+id/tv_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x8dp"
+                    android:text="145 Points"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_moderate"
+                    app:customFont="Montserrat-Regular_0.otf" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_place_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x20dp"
+                android:layout_marginLeft="@dimen/x12dp"
+                android:layout_marginRight="@dimen/x12dp"
+                android:layout_marginTop="@dimen/x20dp"
+                android:background="@drawable/green_rounded_btn"
+                android:padding="@dimen/x12dp"
+                android:text="@string/place_your_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

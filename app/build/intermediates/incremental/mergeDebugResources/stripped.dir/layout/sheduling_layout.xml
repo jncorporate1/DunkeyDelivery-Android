@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/x20dp"
+    android:paddingBottom="@dimen/x20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x10dp"
+        android:text="Schedule Your Order"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/x5dp"
+        android:textSize="@dimen/text_size_moderate" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:background="@color/grey_lighter" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_marginTop="@dimen/x15dp"
+        android:layout_marginBottom="@dimen/x15dp"
+        android:paddingLeft="@dimen/x10dp"
+        android:paddingRight="@dimen/x10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+            android:id="@+id/rb_asap"
+            android:layout_width="@dimen/x0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/left_radio_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/x15dp"
+            android:visibility="gone"
+            android:text="ASAP"
+            android:textColor="@color/tab_text_selector"
+            app:customFont2="Montserrat-Regular_0.otf" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+            android:id="@+id/rb_today"
+            android:layout_width="@dimen/x0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/middle_radio_selector"
+            android:button="@null"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="@dimen/x15dp"
+            android:text="TODAY"
+            android:textColor="@color/tab_text_selector"
+            app:customFont2="Montserrat-Regular_0.otf" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomRadioButton
+            android:id="@+id/rb_later"
+            android:layout_width="@dimen/x0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/right_radio_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/x15dp"
+            android:text="LATER"
+            android:textColor="@color/tab_text_selector"
+            app:customFont2="Montserrat-Regular_0.otf" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:id="@+id/lineOptions"
+        android:background="@color/grey_lighter" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x15dp"
+        android:paddingLeft="@dimen/x10dp"
+        android:paddingRight="@dimen/x10dp"
+        android:paddingTop="@dimen/x15dp">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_date"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/x8dp"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="right"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_size_moderate" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/dateLine"
+        android:visibility="visible"
+        android:background="@color/grey_lighter"/>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x15dp"
+        android:paddingLeft="@dimen/x10dp"
+        android:paddingRight="@dimen/x10dp"
+        android:paddingTop="@dimen/x15dp">
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_moderate" />
+
+        <app.com.dunkeydelivery.utils.customviews.widgets.CustomTextView
+            android:id="@+id/tv_select_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/x8dp"
+            android:drawableRight="@drawable/rightarrow"
+            android:gravity="right"
+            android:textColor="@color/grey3"
+            android:textSize="@dimen/text_size_moderate" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="visible"
+        android:id="@+id/lineTime"
+        android:background="@color/grey_lighter" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x30dp"
+        android:text="@string/submit"
+        android:padding="@dimen/x12dp"
+        android:layout_marginLeft="@dimen/x8dp"
+        android:layout_marginRight="@dimen/x8dp"
+        android:background="@drawable/green_rounded_btn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_medium" />
+
+</LinearLayout>
